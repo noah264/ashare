@@ -30,6 +30,8 @@ class ProductionConfig(Config):
 
 class DevelopmentConfig(Config):
     DEBUG = True
+    SCHEDULER_TIMEZONE = 'Asia/Shanghai'
+    SCHEDULER_API_ENABLED = True  # 添加API
 
 class TestingConfig(Config):
     TESTING = True
